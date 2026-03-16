@@ -1,4 +1,8 @@
 <Solution>
   <Project Path="Studieplanlegger.Client/Studieplanlegger.Client.csproj" />
   <Project Path="Studieplanlegger/Studieplanlegger.csproj" />
+  <Project Path="StudieplanleggerDatabase/StudieplanleggerDatabase.sqlproj" Id="cc14c0b8-3c93-4308-af00-bd28cf169b8f">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>
