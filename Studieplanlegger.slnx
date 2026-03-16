@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Studieplanlegger.Client/Studieplanlegger.Client.csproj" />
+  <Project Path="Studieplanlegger/Studieplanlegger.csproj" />
+</Solution>
