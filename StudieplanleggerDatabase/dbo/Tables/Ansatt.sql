@@ -7,6 +7,6 @@
     RNDProsent       INT            NOT NULL,
     Spesialisering   NVARCHAR (255) NOT NULL,
     FagenhetId         INT            NOT NULL,
-    FOREIGN KEY (FagenhetId) REFERENCES [dbo].[Fagenhet] ([FagenhetId])
+    FOREIGN KEY (FagenhetId) REFERENCES [dbo].Fagenhet (FagenhetId)
 );
 
