@@ -68,5 +68,6 @@
     <Build Include="dbo\Tables\Ansatt.sql" />
     <Build Include="dbo\Tables\Emne.sql" />
     <Build Include="dbo\Tables\Undervisningskategori.sql" />
+    <Build Include="dbo\Tables\Aktivitet.sql" />
   </ItemGroup>
 </Project>
