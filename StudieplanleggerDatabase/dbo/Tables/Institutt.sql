@@ -5,6 +5,6 @@
     Beskrivelse NVARCHAR (MAX) NULL,
     FakultetId INT NOT NULL,
     
-    FOREIGN KEY (FakultetId) REFERENCES [dbo].Fakultet (Organisasjonsnummer)
+    CONSTRAINT Fk_Table_Institutt_Fakultet FOREIGN KEY (FakultetId) REFERENCES [dbo].Fakultet (Organisasjonsnummer)
 );
 
