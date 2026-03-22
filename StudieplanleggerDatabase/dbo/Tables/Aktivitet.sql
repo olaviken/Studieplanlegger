@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].Aktivitet
 (
-	Id INT NOT NULL Identity(1,1) PRIMARY KEY,
+	Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Beskrivelse NVARCHAR(100) NOT NULL,
 	Dato DATE NOT NULL,
 	AntallTimer INT NOT NULL,
