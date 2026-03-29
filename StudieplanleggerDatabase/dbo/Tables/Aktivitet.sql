@@ -9,7 +9,7 @@
 	Emnekode NVARCHAR(50) NOT NULL,
 	UndervisersEpost NVARCHAR(50) NOT NULL,
 
-	CONSTRAINT FK_Table_Aktivitet_Emne FOREIGN KEY (Emne) REFERENCES [dbo].Emne (Emnekode),
+	CONSTRAINT FK_Table_Aktivitet_Emne FOREIGN KEY (Emnekode) REFERENCES [dbo].Emne (Emnekode),
 	CONSTRAINT FK_Table_Aktivitet_Undervisningskategori FOREIGN KEY (Undervisningskategori) REFERENCES [dbo].Undervisningskategori (Id),
 	CONSTRAINT FK_Table_Aktivitet_Underviser FOREIGN KEY (UndervisersEpost) REFERENCES [dbo].Ansatt (Epost),
 
