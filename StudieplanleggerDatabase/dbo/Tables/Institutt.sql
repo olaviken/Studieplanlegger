@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].Institutt (
     Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     Navn NVARCHAR (255) NOT NULL,
-    leder NVARCHAR (255) NOT NULL,
+    leder NVARCHAR (255) NULL,
     Beskrivelse NVARCHAR (MAX) NULL,
     FakultetId INT NOT NULL,
     

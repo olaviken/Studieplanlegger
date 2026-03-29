@@ -6,7 +6,7 @@
 	AntallTimer INT NOT NULL,
 	BeregnetTimer INT,
 	Undervisningskategori INT NOT NULL, 
-	Emne NVARCHAR(50) NOT NULL,
+	Emnekode NVARCHAR(50) NOT NULL,
 	UndervisersEpost NVARCHAR(50) NOT NULL,
 
 	CONSTRAINT FK_Table_Aktivitet_Emne FOREIGN KEY (Emne) REFERENCES [dbo].Emne (Emnekode),

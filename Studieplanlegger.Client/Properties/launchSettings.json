@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Studieplanlegger.Client": {
+      "commandName": "Project",
+      "sqlDebugging": true
+    }
+  }
+}
