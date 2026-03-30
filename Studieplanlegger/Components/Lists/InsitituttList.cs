@@ -2,14 +2,14 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class InsitituttList
+    public class InsitituttList : Interfaces.IInstituttList
     {
-        public List<Institutt> institutter;
+        private List<Institutt> institutter;
 
-        public InsitituttList()
+        public List<Institutt> GetInstitutter()
         {
-            institutter = new List<Institutt>();
-        }   
+            return institutter;
+        }
 
         public void AddInstitutt(Institutt institutt)
         {

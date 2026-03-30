@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class UndervisningskategoriList
+    public class UndervisningskategoriList : Interfaces.IUndervisningskategoriList
     {
-        public List<Undervisningskategori> undervisningskategorier;
+        private List<Undervisningskategori> undervisningskategorier;
 
-        public UndervisningskategoriList()
+        public List<Undervisningskategori> GetUndervisningskategorier()
         {
-            undervisningskategorier = new List<Undervisningskategori>();
+            return undervisningskategorier;
         }
 
         public void AddUndervisningskategori(Undervisningskategori undervisningskategori)

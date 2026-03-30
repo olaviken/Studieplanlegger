@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class FagfeltList
+    public class FagfeltList :Interfaces.IFagfeltList
     {
-        public List<Fagfelt> fagfelter;
+        private List<Fagfelt> fagfelter;
 
-        public FagfeltList()
+        public List<Fagfelt> GetFagfelter()
         {
-            fagfelter = new List<Fagfelt>();
+            return fagfelter;
         }
 
         public void AddFagfelt(Fagfelt fagfelt)

@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class FakultetList
+    public class FakultetList : Interfaces.IFakultetList
     {
-        public List<Fakultet> fakulteter;
+        private List<Fakultet> fakulteter;
 
-        public FakultetList()
+        public List<Fakultet> GetFakulteter()
         {
-            fakulteter = new List<Fakultet>();
+            return fakulteter;
         }
 
         public void AddFakultet(Fakultet fakultet)

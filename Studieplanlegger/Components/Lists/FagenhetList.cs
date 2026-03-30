@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class FagenhetList
+    public class FagenhetList : Interfaces.IFagenhetList
     {
-        public List<Fagenhet> fagenheter;
+        private List<Fagenhet> fagenheter;
 
-        public FagenhetList()
+        public List<Fagenhet> GetFagenheter()
         {
-            fagenheter = new List<Fagenhet>();
+            return fagenheter;
         }
 
         public void AddFagenhet(Fagenhet fagenhet)

@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class Ansattlist
+    public class Ansattlist: Interfaces.IAnsattlist
     {
-        public List<Ansatt> ansatte;
+        private List<Ansatt> ansatte;
 
-       public Ansattlist() 
+       public List<Ansatt> GetAnsatte()
         {
-            ansatte = new List<Ansatt>();
+            return ansatte;
         }
 
         public void AddAnsatt(Ansatt ansatt)
