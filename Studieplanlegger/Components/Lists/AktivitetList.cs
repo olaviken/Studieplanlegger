@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class AktivitetList
+    public class AktivitetList : Interfaces.IAktivitetsList
     {
-        public List<Aktivitet> aktiviteter;
+        private List<Aktivitet> aktiviteter = new();
 
-        public AktivitetList()
+        public List<Aktivitet> GetAktiviteter()
         {
-            aktiviteter = new List<Aktivitet>();
+            return aktiviteter;
         }
 
         public void AddAktivitet(Aktivitet aktivitet)

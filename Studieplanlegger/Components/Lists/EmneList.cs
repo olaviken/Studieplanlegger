@@ -2,13 +2,13 @@
 
 namespace Studieplanlegger.Components.Lists
 {
-    public class EmneList
+    public class EmneList : Interfaces.IEmneList
     {
-        public List<Emne> emner;
+        private List<Emne> emner;
 
-        public EmneList()
+        public List<Emne> GetEmner()
         {
-            emner = new List<Emne>();
+            return emner;
         }
 
         public void Add(Emne emne)
